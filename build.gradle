@@ -1,0 +1,13 @@
+
+allprojects {
+  repositories {
+    mavenLocal()
+    mavenCentral()
+  }
+}
+task showRepos {
+  doLast {
+    println "All repos:"
+    println repositories.collect { it.name }
+  }
+}

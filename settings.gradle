@@ -1,1 +1,12 @@
+pluginManagement {
+  repositories {
+    mavenCentral()
+    gradlePluginPortal()
+  }
+}
+
 rootProject.name = 'fast-microservices'
+
+include "quarkus-rest-microservice"
+include "micronaut-demo"
+include "microprofile-demo"
